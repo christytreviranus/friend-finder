@@ -73,3 +73,12 @@ span {
 hr {
 	background-color: #E1E2E2;;
 }
+
+.form-group {
+	text-align: left;
+}
+
+h4 {
+	margin-top: 20px;
+	padding-top: 20px;
+}
