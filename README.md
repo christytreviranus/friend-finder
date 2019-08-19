@@ -8,7 +8,7 @@
 
 ## Demo
 	
-*Friend Finder* is deployed to Heroku. Please check it out [here](https://).
+*Friend Finder* is deployed to Heroku. Please check it out [here](https://shielded-ravine-88628.herokuapp.com/).
 
 ## Installation
 
