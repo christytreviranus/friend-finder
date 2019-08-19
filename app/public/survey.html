@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Friend Finder | Match Me</title>
@@ -12,202 +11,221 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/app/css/style.css">
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <div class="container content">
-    <h1>Survey</h1>
-    <p>The following survey uses an algorithm we have custom developed to match you with your perfect match based on
-      your responses. You will be selecting answers to each of the questions based on a 5pt Likert scale of 1 (Strongly
-      Disagree) to 5 (Strongly Agree). Select the response which best describes you in each situation. Once you are
-      finished, Submit the results, and we will show you your perfect match!</p>
-    <form>
-      <div class="form-group">
-        <h4>Profile Information</h4>
-        <hr>
-        Name:
-        <input id="name" type="text" class="form-control" placeholder="Name (Required)">
-        <br>
-      </div>
-      <div class="form-group">
-        Profile Photo:
-        <div class="input-group mb-3">
-          <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile02">
-            <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
-          </div>
-          <div class="input-group-append">
-            <span class="input-group-text" id="">Upload</span>
-          </div>
-        </div>
-        <!-- <input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
-                <br> -->
-      </div>
-      <div class="form-group">
-        <h4>About Me Questionnaire</h4>
-        <hr>
+	<div class="container content">
+		<h1>Survey</h1>
+		<p>The following survey uses an algorithm we have custom developed to match you with your perfect match based on
+            your responses. You will be selecting answers to each of the questions based on a 5pt Likert scale of 1 (Strongly
+            Disagree) to 5 (Strongly Agree). Select the response which best describes you in each situation. Once you are
+            finished, Submit the results, and we will show you your perfect match!</p>
+		<form>
+			<div class="form-group">
+                    <h4>Profile Information</h4>
+                    <hr>
+                    Name:
+				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+			</div>
+			<div class="form-group">
+                    Profile Photo:
+				<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+			</div>
+			<div class="form-group">
+                    <h4>About Me Questionnaire</h4>
+                    <hr>
+				<label for="question1">Question 1: I enjoy doing new things</label>
+				<select class="form-control" id="question1">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question2">Question 2: I am easily trusting of others</label>
+				<select class="form-control" id="question2">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question3">Question 3: I consider myself imaginative and creative</label>
+				<select class="form-control" id="question3">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question4">Question 4:  I am confident in myself</label>
+				<select class="form-control" id="question4">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question5">Question 5: Intelligence is very important to me</label>
+				<select class="form-control" id="question5">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question6">Question 6:  I enjoy eating healthy most of the time</label>
+				<select class="form-control" id="question6">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question7">Question 7:  I am spontaneous</label>
+				<select class="form-control" id="question7">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question8">Question 8:  I am good with money</label>
+				<select class="form-control" id="question8">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question9">Question 9:  I believe fitness is important for myself and others</label>
+				<select class="form-control" id="question9">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question10">Question 10:  I believe in the goodness of others</label>
+				<select class="form-control" id="question10">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</form>
+		<div class="text-center">
+			<button id="submitBtn" type="submit" class="btn btn-lg">Submit</button>
+		</div>
+		
+		<!-- Modal after survey completion -->
+		<div id="bestFriendModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Your New Best Friend</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="bestFriend"></h2>
+						<img id="bestFriendPhoto" src="#">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-        <div class="form-group">
-          <label for="survey">Question 1: I am easily trusting of others...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 2: It is difficult for me to let people get emotionally close
-            to me...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 3: I am generally a laid back person who takes things in
-            stride...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 4: I believe all people are good at heart...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 5: I need to have things planned out...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 6: I believe in confronting issues head-on...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 7: I thrive on challenges...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 8: I rather stay home than go to a party...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 9: I crave spontaneity...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="survey">Question 10: I am often happiest in crowds and around other
-            people...</label>
-          <select class="form-control" id="survey-question">
-            <option>Select one...</option> <!-- This is causing the field to drop up instead of down -->
-            <option>1 (Strongly Disagree)</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5 (Strongly Agree)</option>
-          </select>
-        </div>
-
-        <div class="text-center">
-          <button id="submitBtn" type="submit" class="btn btn-lg">Submit</button>
-        </div>
-
-        <!-- Modal after survey completion -->
-        <div id="bestFriendModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title">Your Match is.....</h1>
-              </div>
-              <div class="modal-body">
-                <h2 id="bestFriend"></h2>
-                <img id="bestFriendPhoto" src="#">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
+	<footer>
+            <div class="container">
+                <a href="/api/friends" target="_blank">Discover Friends API</a>
+                <span>|</span>
+                <a href="https://github.com/christytreviranus/friend-finder" target="_blank">GitHub Repo</a>
             </div>
-          </div>
-        </div>
-      </div>
+        </footer>
 
-
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>
+
+<script type="text/javascript">
+	$("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+
+		// Form validation
+		let valid = true;
+
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+
+		if(valid === true) {
+			let newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+
+			let currentURL = window.location.origin;
+
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Survey is incomplete!");
+		}
+	});
+</script>

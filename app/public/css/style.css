@@ -56,11 +56,14 @@ a {
 
 #bestFriendModal {
 	text-align: center;
+	background: #1D2228;
+	color: #E1E2E2;
+
 }
 
 #bestFriendPhoto {
-	max-width: 100%;
-	height: auto;
+	max-width: 200px;
+	max-height: 200px;
 }
 
 span {
